@@ -1,0 +1,122 @@
+@import "~bootstrap/scss/bootstrap";
+
+.main-app {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5rem;
+  height: 100vh;
+  background: #f4f4f4;
+
+  &_content {
+    display: flex;
+    background: #fff;
+    border-radius: 25px;
+
+    &--wrapper{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      background: #c1c1c1;
+      border-radius: 0 25px 25px 0;
+
+      .white-box{
+        background: #FFF;
+        height: 85%;
+        width: 100%;
+        border-radius: 0 25px 25px 0;
+      }
+    }
+  }
+
+  
+}
+
+.side-bar {
+  height: 80vh;
+  width: 30vw;
+  padding: 1rem;
+  border-radius: 25px;
+  background: linear-gradient(0deg, rgba(8, 86, 94, 1) 0%, rgba(1, 236, 255, 1) 100%);
+
+  input{
+    border-radius: 30px;
+    padding-left: 2rem;
+  }
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: 18px 20px;
+      border-bottom: 1px solid #0feafd;
+      color: #FFF;
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 1rem;
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+    }
+  }
+
+  .accordion {
+    width: 100%;
+
+    .accordion-item {
+      border-radius: 0;
+      background: transparent;
+      border: 0;
+      padding: 1.2rem 0;
+      color: #FFF;
+
+      .accordion-header {
+        button {
+          background: #00dff1;
+          color: #fff;
+          box-shadow: none;
+          border-radius: 10px;
+
+          &.collapsed {
+            background: none;
+          }
+        }
+      }
+
+      .accordion-body {
+        display: flex;
+        flex-direction: column;
+
+        a.nav-link {
+          color: white;
+          text-decoration: none;
+          border-radius: 30px;
+          padding: 0.25rem 1rem;
+
+          &.active{
+            background: #06cadb;
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 1rem 1.2rem 2rem;
+  color: #00dff1;
+  font-weight: 600;
+  border-bottom: 2px solid #eeeeee;
+}
+
