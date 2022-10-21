@@ -33,11 +33,6 @@
 }
 
 .side-bar {
-  height: 80vh;
-  width: 30vw;
-  padding: 1rem;
-  border-radius: 25px;
-  background: linear-gradient(0deg, rgba(8, 86, 94, 1) 0%, rgba(1, 236, 255, 1) 100%);
 
   input{
     border-radius: 30px;
@@ -57,7 +52,6 @@
     li {
       padding: 18px 20px;
       border-bottom: 1px solid #0feafd;
-      color: #FFF;
       display: flex;
       align-items: center;
 

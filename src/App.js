@@ -5,26 +5,29 @@ import Layout from './components/Layout';
 import Notifications from './components/Notifications';
 import Plan from './components/Plan';
 import ThemeConfig from './components/ThemeConfig';
+import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
   return (
     <Router>
-      <Layout>
-        <Switch>
-          <Route path="/" exact>
-            <Landing />
-          </Route>
-          <Route path="/theme">
-            <ThemeConfig />
-          </Route>
-          <Route path="/plan">
-            <Plan />
-          </Route>
-          <Route path="/notifications">
-            <Notifications />
-          </Route>
-        </Switch>
-      </Layout>
+      <ThemeProvider>
+        <Layout>
+          <Switch>
+            <Route path="/" exact>
+              <Landing />
+            </Route>
+            <Route path="/theme">
+              <ThemeConfig />
+            </Route>
+            <Route path="/plan">
+              <Plan />
+            </Route>
+            <Route path="/notifications">
+              <Notifications />
+            </Route>
+          </Switch>
+        </Layout>
+      </ThemeProvider>
     </Router>
   );
 }
