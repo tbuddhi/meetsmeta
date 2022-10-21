@@ -16,17 +16,17 @@ export function useThemeUpdate() {
 export const ThemeProvider = ({ children }) => {
 
     const defaultTheme = {
-        title: "Company XXX",
-        title_color: '#0000ff',
-        menu_color: "#233333",
-        menu_text_color: "#F5450A",
+        title: "Company ABC",
+        title_color: '#4A4A4A',
+        menu_color: "#186276",
+        menu_text_color: "#FFFFFF",
         primary_color: "#1233",
         secondary_color: "#121321"
     }
 
-    const setNewTheme = evt => {
-        const value = evt.target.value;
-        const name = evt.target.name;
+    const setNewTheme = event => {
+        const value = event.target.value;
+        const name = event.target.name;
         setThemeValues({
             ...themeValues,
             [name]: value
@@ -44,7 +44,7 @@ export const ThemeProvider = ({ children }) => {
     }
 
     useEffect(() => {
-        // getTheme();
+        getTheme();
     }, []);
 
     return (
