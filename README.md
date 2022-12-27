@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Demo [MeetsMeta](https://effortless-tapioca-293d8f.netlify.app/).
 
 ## Available Scripts
 
